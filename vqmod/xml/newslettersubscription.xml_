@@ -1,0 +1,28 @@
+<modification>
+    <id>Indian Rupee Symbol</id>
+    <version>2.0</version>
+    <vqmver>2.4.1</vqmver>
+    <author>IRSSOFT</author>
+    <file path="admin/controller/common/menu.php">
+        <operation>
+            <search position="after"><![CDATA[$this->load->language('common/menu');]]></search>
+            <add><![CDATA[$data['news'] = $this->url->link('common/newsletter', 'token=' . $this->session->data['token'], 'SSL');]]></add>
+        </operation>
+        <operation>
+            <search position="after" offset="2"><![CDATA[$this->load->language('common/menu');]]></search>
+            <add><![CDATA[$data['newsletter'] = "Newsletter";]]></add>
+        </operation>
+    </file>
+	
+	<file path="admin/view/template/common/menu.tpl">
+        <operation>
+            <search position="after"><![CDATA[<li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>]]></search>
+            <add><![CDATA[<a href="<?php echo $news; ?>"><?php echo $newsletter; ?></a>]]></add>
+        </operation>
+
+    </file>
+
+    
+	
+
+</modification>

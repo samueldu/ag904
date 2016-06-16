@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modification>
+	<id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+	<version>1.4.x and 1.5.x</version>
+	<vqmver required="true">2.4.0</vqmver>
+	<author>Opcrat</author>
+	
+	<file name="admin/controller/common/menu.php">
+		<operation>
+			<search position="after"><![CDATA[$data['text_openbay_order_import']]]></search>
+			<add><![CDATA[
+				$data['text_portifolios'] = $this->language->get('text_portifolios');
+				$data['text_portifolio_author'] = $this->language->get('text_portifolio_author');
+				$data['text_portifolio_category'] = $this->language->get('text_portifolio_category');
+				$data['text_portifolio_article'] = $this->language->get('text_portifolio_article');
+				$data['text_portifolio_article_comment'] = $this->language->get('text_portifolio_article_comment');
+				$data['text_portifolio_view_report'] = $this->language->get('text_portifolio_view_report');
+				$data['text_portifolio_setting'] = $this->language->get('text_portifolio_setting');
+				$data['text_portifolio_general_setting'] = $this->language->get('text_portifolio_general_setting');
+				$data['text_portifolio_category_setting'] = $this->language->get('text_portifolio_category_setting');
+			]]></add>
+		</operation>
+		
+		<operation>
+			<search position="after"><![CDATA[$data['openbay_link_amazonus_links']]]></search>
+			<add><![CDATA[
+				$data['portifolio_author'] = $this->url->link('portifolio/author', 'token=' . $this->session->data['token'], 'SSL');
+				$data['portifolio_category'] = $this->url->link('portifolio/category', 'token=' . $this->session->data['token'], 'SSL');
+				$data['portifolio_article'] = $this->url->link('portifolio/article', 'token=' . $this->session->data['token'], 'SSL');
+				$data['portifolio_comment'] = $this->url->link('portifolio/comment', 'token=' . $this->session->data['token'], 'SSL');
+				$data['portifolio_general_setting'] = $this->url->link('module/portifolio', 'token=' . $this->session->data['token'], 'SSL');
+				$data['portifolio_category_setting'] = $this->url->link('module/portifolio_category', 'token=' . $this->session->data['token'], 'SSL');
+				$data['portifolio_view_report'] = $this->url->link('portifolio/report', 'token=' . $this->session->data['token'], 'SSL');
+			]]></add>
+		</operation>
+		
+	</file>
+	
+	<file name="admin/language/*/common/menu.php">
+		<operation>
+			<search position="after"><![CDATA[$_['text_paypal_manage']]]></search>
+			<add><![CDATA[
+				$_['text_portifolios']	= 'Portifólio';
+				$_['text_portifolio_author']	= 'Author';
+				$_['text_portifolio_category']	= 'Category';
+				$_['text_portifolio_article']	= 'Article';
+				$_['text_portifolio_article_comment']	= 'Article Comment';
+				$_['text_portifolio_setting'] = 'Setting';
+				$_['text_portifolio_general_setting'] = 'General Setting';
+				$_['text_portifolio_category_setting'] = 'Category Setting';
+				$_['text_portifolio_view_report'] = 'Report';
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="admin/view/template/common/menu.tpl">
+		<operation>
+			<search position="before"><![CDATA[<li id="reports">]]></search>
+			<add><![CDATA[
+				<li id="simple-blog"><a class="parent"><i class="fa fa-file-text-o fa-fw"></i> <span><?php echo $text_portifolios; ?></span></a>
+                    <ul>
+                        <li><a href="<?php echo $portifolio_article; ?>"><?php echo $text_portifolio_article; ?></a></li>
+                        <li><a href="<?php echo $portifolio_category; ?>"><?php echo $text_portifolio_category; ?></a></li>
+              			<li><a href="<?php echo $portifolio_author; ?>"><?php echo $text_portifolio_author; ?></a></li>
+              			<li><a href="<?php echo $portifolio_comment; ?>"><?php echo $text_portifolio_article_comment; ?></a></li>
+              			<li><a href="<?php echo $portifolio_view_report; ?>"><?php echo $text_portifolio_view_report; ?></a></li>
+                        <li><a class="parent"><?php echo $text_portifolio_setting; ?></a>
+                            <ul>
+              					<li><a href="<?php echo $portifolio_general_setting; ?>"><?php echo $text_portifolio_general_setting; ?></a></li>
+              					<li><a href="<?php echo $portifolio_category_setting; ?>"><?php echo $text_portifolio_category_setting; ?></a></li>
+              				</ul>
+                        </li>
+                    </ul>
+                </li>
+			]]></add>
+		</operation>
+	</file>
+    
+    <!-- <file name="admin/controller/common/home.php">
+		<operation>
+			<search position="before"><![CDATA[$this->template = 'common/home.tpl';]]></search>
+			<add><![CDATA[
+				if (isset($this->session->data['success'])) {
+    				$data['success'] = $this->session->data['success'];
+    	
+    				unset($this->session->data['success']);
+    			} else {
+    				$data['success'] = '';
+    			}
+			]]></add>
+		</operation>
+	</file>
+    
+    <file name="admin/view/template/common/home.tpl">
+		<operation>
+			<search position="before"><![CDATA[<div class="box">]]></search>
+			<add><![CDATA[
+				<?php if ($success) { ?>
+  			       <div class="success"><?php echo $success; ?></div>
+  		        <?php } ?>
+			]]></add>
+		</operation>
+	</file> -->
+
+</modification>

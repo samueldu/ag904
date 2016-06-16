@@ -1,0 +1,224 @@
+2016-05-09 23:26:56 - INFO --> Starting transaction log
+2016-05-09 23:26:56 - CRIT --> [maxiPago Class error] Invalid credentials. in H:\samuel\xamp\htdocs\ag904\core\catalog\controller\payment\lib\maxipago\ServiceBase.php on line 19
+2016-05-09 23:29:14 - INFO --> Starting transaction log
+2016-05-09 23:29:14 - CRIT --> [maxiPago Class error] Invalid credentials. in H:\samuel\xamp\htdocs\ag904\core\catalog\controller\payment\lib\maxipago\ServiceBase.php on line 19
+2016-05-09 23:29:22 - INFO --> Starting transaction log
+2016-05-09 23:29:22 - CRIT --> [maxiPago Class error] Invalid credentials. in H:\samuel\xamp\htdocs\ag904\core\catalog\controller\payment\lib\maxipago\ServiceBase.php on line 19
+2016-05-09 23:29:48 - INFO --> Starting transaction log
+2016-05-09 23:29:48 - CRIT --> [maxiPago Class error] Invalid credentials. in H:\samuel\xamp\htdocs\ag904\core\catalog\controller\payment\lib\maxipago\ServiceBase.php on line 19
+2016-05-09 23:32:28 - INFO --> Starting transaction log
+2016-05-09 23:32:28 - NOTICE --> Setting credentials "5695" and "1xvo********************"
+2016-05-09 23:32:28 - NOTICE --> Setting enviroment to "TEST"
+2016-05-09 23:32:28 - NOTICE --> Calling method maxiPago::creditCardSale
+2016-05-09 23:32:28 - NOTICE --> Parameters sent; array (
+  'processorID' => '1',
+  'referenceNum' => 'TestTransaction123',
+  'chargeTotal' => '10.00',
+  'bname' => 'John Smith',
+  'number' => '4111************',
+  'expMonth' => '07',
+  'expYear' => '2020',
+  'cvvNumber' => '***',
+)
+2016-05-09 23:32:28 - INFO --> XML has been generated
+2016-05-09 23:32:31 - INFO --> Sending XML to https://testapi.maxipago.net/UniversalAPI/postXML
+2016-05-09 23:32:31 - INFO --> XML Response received
+2016-05-09 23:32:31 - NOTICE --> Parsed parameters received; array (
+  'authCode' => '123456',
+  'orderID' => 'C0A8013F:0154976F83E9:2345:00608F02',
+  'referenceNum' => 'TestTransaction123',
+  'transactionID' => '1395115',
+  'transactionTimestamp' => '1462829548',
+  'responseCode' => '0',
+  'responseMessage' => 'CAPTURED',
+  'avsResponseCode' => 'YYY',
+  'cvvResponseCode' => 'M',
+  'processorCode' => 'A',
+  'processorMessage' => 'APPROVED',
+  'errorMessage' => '',
+  'creditCardCountry' => 'US',
+  'creditCardScheme' => 'Visa',
+)
+2016-05-09 23:33:12 - INFO --> Starting transaction log
+2016-05-09 23:33:12 - NOTICE --> Setting credentials "5695" and "1xvo********************"
+2016-05-09 23:33:12 - NOTICE --> Setting enviroment to "TEST"
+2016-05-09 23:33:12 - NOTICE --> Calling method maxiPago::creditCardSale
+2016-05-09 23:33:12 - NOTICE --> Parameters sent; array (
+  'processorID' => '1',
+  'referenceNum' => 'TestTransaction123',
+  'chargeTotal' => '10.00',
+  'bname' => 'John Smith',
+  'number' => '4111************',
+  'expMonth' => '07',
+  'expYear' => '2020',
+  'cvvNumber' => '***',
+)
+2016-05-09 23:33:12 - INFO --> XML has been generated
+2016-05-09 23:33:13 - INFO --> Sending XML to https://testapi.maxipago.net/UniversalAPI/postXML
+2016-05-09 23:33:13 - INFO --> XML Response received
+2016-05-09 23:33:13 - NOTICE --> Parsed parameters received; array (
+  'authCode' => '123456',
+  'orderID' => 'C0A8013F:01549770276A:7B67:01C2D428',
+  'referenceNum' => 'TestTransaction123',
+  'transactionID' => '1395116',
+  'transactionTimestamp' => '1462829590',
+  'responseCode' => '0',
+  'responseMessage' => 'CAPTURED',
+  'avsResponseCode' => 'YYY',
+  'cvvResponseCode' => 'M',
+  'processorCode' => 'A',
+  'processorMessage' => 'APPROVED',
+  'errorMessage' => '',
+  'creditCardCountry' => 'US',
+  'creditCardScheme' => 'Visa',
+)
+2016-05-09 23:36:41 - INFO --> Starting transaction log
+2016-05-09 23:36:41 - NOTICE --> Setting credentials "5695" and "1xvo********************"
+2016-05-09 23:36:41 - NOTICE --> Setting enviroment to "TEST"
+2016-05-09 23:36:41 - NOTICE --> Calling method maxiPago::creditCardSale
+2016-05-09 23:36:41 - NOTICE --> Parameters sent; array (
+  'processorID' => '1',
+  'referenceNum' => 'TestTransaction123',
+  'chargeTotal' => '10.00',
+  'bname' => 'John Smith',
+  'number' => '4111************',
+  'expMonth' => '07',
+  'expYear' => '2020',
+  'cvvNumber' => '***',
+)
+2016-05-09 23:36:41 - INFO --> XML has been generated
+2016-05-09 23:36:43 - INFO --> Sending XML to https://testapi.maxipago.net/UniversalAPI/postXML
+2016-05-09 23:36:43 - INFO --> XML Response received
+2016-05-09 23:36:43 - NOTICE --> Parsed parameters received; array (
+  'authCode' => '123456',
+  'orderID' => 'C0A8013F:015497735AB2:7A09:0094B66C',
+  'referenceNum' => 'TestTransaction123',
+  'transactionID' => '1395118',
+  'transactionTimestamp' => '1462829800',
+  'responseCode' => '0',
+  'responseMessage' => 'CAPTURED',
+  'avsResponseCode' => 'YYY',
+  'cvvResponseCode' => 'M',
+  'processorCode' => 'A',
+  'processorMessage' => 'APPROVED',
+  'errorMessage' => '',
+  'creditCardCountry' => 'US',
+  'creditCardScheme' => 'Visa',
+)
+2016-05-09 23:43:14 - INFO --> Starting transaction log
+2016-05-09 23:43:14 - NOTICE --> Setting credentials "5695" and "1xvo********************"
+2016-05-09 23:43:14 - NOTICE --> Setting enviroment to "TEST"
+2016-05-09 23:43:14 - NOTICE --> Calling method maxiPago::creditCardSale
+2016-05-09 23:43:14 - NOTICE --> Parameters sent; array (
+  'processorID' => '1',
+  'referenceNum' => 'TestTransaction123',
+  'chargeTotal' => '10.00',
+  'bname' => 'John Smith',
+  'number' => '4111************',
+  'expMonth' => '07',
+  'expYear' => '2020',
+  'cvvNumber' => '***',
+)
+2016-05-09 23:43:14 - INFO --> XML has been generated
+2016-05-09 23:43:15 - INFO --> Sending XML to https://testapi.maxipago.net/UniversalAPI/postXML
+2016-05-09 23:43:15 - INFO --> XML Response received
+2016-05-09 23:43:15 - NOTICE --> Parsed parameters received; array (
+  'authCode' => '123456',
+  'orderID' => 'C0A8013F:015497795789:A78B:00093308',
+  'referenceNum' => 'TestTransaction123',
+  'transactionID' => '1395122',
+  'transactionTimestamp' => '1462830192',
+  'responseCode' => '0',
+  'responseMessage' => 'CAPTURED',
+  'avsResponseCode' => 'YYY',
+  'cvvResponseCode' => 'M',
+  'processorCode' => 'A',
+  'processorMessage' => 'APPROVED',
+  'errorMessage' => '',
+  'creditCardCountry' => 'US',
+  'creditCardScheme' => 'Visa',
+)
+2016-05-09 23:55:58 - INFO --> Starting transaction log
+2016-05-09 23:55:58 - NOTICE --> Setting credentials "5695" and "1xvo********************"
+2016-05-09 23:55:58 - NOTICE --> Setting enviroment to "TEST"
+2016-05-09 23:55:58 - NOTICE --> Calling method maxiPago::creditCardSale
+2016-05-09 23:55:58 - NOTICE --> Parameters sent; array (
+  'processorID' => '1',
+  'referenceNum' => 'TestTransaction123',
+  'chargeTotal' => '10.00',
+  'bname' => 'John Smith',
+  'number' => '4111************',
+  'expMonth' => '07',
+  'expYear' => '2020',
+  'cvvNumber' => '***',
+)
+2016-05-09 23:55:58 - INFO --> XML has been generated
+2016-05-09 23:55:58 - INFO --> Sending XML to https://testapi.maxipago.net/UniversalAPI/postXML
+2016-05-09 23:55:58 - CRIT --> [maxiPago Class] Connection error with maxiPago! server in H:\samuel\xamp\htdocs\ag904\core\catalog\controller\payment\lib\maxipago\Request.php on line 26
+2016-05-09 23:55:58 - CRIT --> [maxiPago Class] Connection error with maxiPago! server in H:\samuel\xamp\htdocs\ag904\core\catalog\controller\payment\lib\maxipago\Request.php on line 26
+2016-05-09 23:56:34 - INFO --> Starting transaction log
+2016-05-09 23:56:34 - NOTICE --> Setting credentials "5695" and "1xvo********************"
+2016-05-09 23:56:34 - NOTICE --> Setting enviroment to "TEST"
+2016-05-09 23:56:34 - NOTICE --> Calling method maxiPago::creditCardSale
+2016-05-09 23:56:34 - NOTICE --> Parameters sent; array (
+  'processorID' => '1',
+  'referenceNum' => 'TestTransaction123',
+  'chargeTotal' => '10.00',
+  'bname' => 'John Smith',
+  'number' => '4111************',
+  'expMonth' => '07',
+  'expYear' => '2020',
+  'cvvNumber' => '***',
+)
+2016-05-09 23:56:34 - INFO --> XML has been generated
+2016-05-09 23:56:36 - INFO --> Sending XML to https://testapi.maxipago.net/UniversalAPI/postXML
+2016-05-09 23:56:36 - INFO --> XML Response received
+2016-05-09 23:56:36 - NOTICE --> Parsed parameters received; array (
+  'authCode' => '123456',
+  'orderID' => 'C0A8013F:015497858DC0:5B7B:017E4898',
+  'referenceNum' => 'TestTransaction123',
+  'transactionID' => '1395130',
+  'transactionTimestamp' => '1462830992',
+  'responseCode' => '0',
+  'responseMessage' => 'CAPTURED',
+  'avsResponseCode' => 'YYY',
+  'cvvResponseCode' => 'M',
+  'processorCode' => 'A',
+  'processorMessage' => 'APPROVED',
+  'errorMessage' => '',
+  'creditCardCountry' => 'US',
+  'creditCardScheme' => 'Visa',
+)
+2016-05-09 23:58:41 - INFO --> Starting transaction log
+2016-05-09 23:58:41 - NOTICE --> Setting credentials "5695" and "1xvo********************"
+2016-05-09 23:58:41 - NOTICE --> Setting enviroment to "TEST"
+2016-05-09 23:58:41 - NOTICE --> Calling method maxiPago::creditCardSale
+2016-05-09 23:58:41 - NOTICE --> Parameters sent; array (
+  'processorID' => '1',
+  'referenceNum' => 'TestTransaction123',
+  'chargeTotal' => '10.00',
+  'bname' => 'John Smith',
+  'number' => '4111************',
+  'expMonth' => '07',
+  'expYear' => '2020',
+  'cvvNumber' => '***',
+)
+2016-05-09 23:58:41 - INFO --> XML has been generated
+2016-05-09 23:58:42 - INFO --> Sending XML to https://testapi.maxipago.net/UniversalAPI/postXML
+2016-05-09 23:58:42 - INFO --> XML Response received
+2016-05-09 23:58:42 - NOTICE --> Parsed parameters received; array (
+  'authCode' => '123456',
+  'orderID' => 'C0A8013F:015497877C52:4BCB:010C2351',
+  'referenceNum' => 'TestTransaction123',
+  'transactionID' => '1395133',
+  'transactionTimestamp' => '1462831119',
+  'responseCode' => '0',
+  'responseMessage' => 'CAPTURED',
+  'avsResponseCode' => 'YYY',
+  'cvvResponseCode' => 'M',
+  'processorCode' => 'A',
+  'processorMessage' => 'APPROVED',
+  'errorMessage' => '',
+  'creditCardCountry' => 'US',
+  'creditCardScheme' => 'Visa',
+)

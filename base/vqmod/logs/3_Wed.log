@@ -1,0 +1,45 @@
+---------- Date: 2015-09-30 16:26:08 ~ IP : ::1 ----------
+REQUEST URI : /ag904/core/
+MOD DETAILS:
+   modFile   : H:\samuel\xamp\htdocs\ag904\core\vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-09-30 16:26:19 ~ IP : ::1 ----------
+REQUEST URI : /ag904/core/index.php?route=information/contact
+MOD DETAILS:
+   modFile   : H:\samuel\xamp\htdocs\ag904\core\vqmod/xml/contact.xml
+   id        : Contact Us API Opencart Module
+   version   : 1.0
+   vqmver    : 1.0.8
+   author    : Samir Das
+
+File Name    : catalog/controller/information/contact.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $this->redirect($this->url->link('information/contact/success'));
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-09-30 16:36:56 ~ IP : ::1 ----------
+REQUEST URI : /ag904/core/index.php?route=information/contact/success
+MOD DETAILS:
+   modFile   : H:\samuel\xamp\htdocs\ag904\core\vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+----------------------------------------------------------------------
+
+

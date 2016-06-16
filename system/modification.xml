@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>MOD TESTE</name>
+    <code>MOD TESTE</code>
+    <version>1.2</version>
+    <author>Manoel Vidal</author>
+    <link>http://www.opencartbrasil.com.br</link>
+    <file path="catalog/controller/common/home.php">
+        <operation>
+            <search>
+                <![CDATA[$data['footer'] = $this->load->controller('common/footer');]]>
+            </search>
+            <add position="before">
+                <![CDATA[]]>
+            </add>
+        </operation>
+    </file>
+</modification>

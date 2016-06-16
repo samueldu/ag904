@@ -1,0 +1,30 @@
+---------- Date: 2015-09-03 15:50:45 ~ IP : ::1 ----------
+REQUEST URI : /ag904/core/
+MOD DETAILS:
+   modFile   : H:\samuel\xamp\htdocs\ag904\core\vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-09-03 22:54:36 ~ IP : ::1 ----------
+REQUEST URI : /ag904/teste4/
+MOD DETAILS:
+   modFile   : H:\samuel\xamp\htdocs\ag904\core\vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/controller/common/seo_url.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+
+----------------------------------------------------------------------
+
+

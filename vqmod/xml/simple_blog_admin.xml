@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modification>
+	<id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+	<version>1.4.x and 1.5.x</version>
+	<vqmver required="true">2.4.0</vqmver>
+	<author>Opcrat</author>
+	
+	<file name="admin/controller/common/menu.php">
+		<operation>
+			<search position="after"><![CDATA[$data['text_openbay_order_import']]]></search>
+			<add><![CDATA[
+				$data['text_simple_blogs'] = $this->language->get('text_simple_blogs');
+				$data['text_simple_blog_author'] = $this->language->get('text_simple_blog_author');
+				$data['text_simple_blog_category'] = $this->language->get('text_simple_blog_category');
+				$data['text_simple_blog_article'] = $this->language->get('text_simple_blog_article');
+				$data['text_simple_blog_article_comment'] = $this->language->get('text_simple_blog_article_comment');
+				$data['text_simple_blog_view_report'] = $this->language->get('text_simple_blog_view_report');
+				$data['text_simple_blog_setting'] = $this->language->get('text_simple_blog_setting');
+				$data['text_simple_blog_general_setting'] = $this->language->get('text_simple_blog_general_setting');
+				$data['text_simple_blog_category_setting'] = $this->language->get('text_simple_blog_category_setting');
+			]]></add>
+		</operation>
+		
+		<operation>
+			<search position="after"><![CDATA[$data['openbay_link_amazonus_links']]]></search>
+			<add><![CDATA[
+				$data['simple_blog_author'] = $this->url->link('simple_blog/author', 'token=' . $this->session->data['token'], 'SSL');
+				$data['simple_blog_category'] = $this->url->link('simple_blog/category', 'token=' . $this->session->data['token'], 'SSL');
+				$data['simple_blog_article'] = $this->url->link('simple_blog/article', 'token=' . $this->session->data['token'], 'SSL');
+				$data['simple_blog_comment'] = $this->url->link('simple_blog/comment', 'token=' . $this->session->data['token'], 'SSL');
+				$data['simple_blog_general_setting'] = $this->url->link('module/simple_blog', 'token=' . $this->session->data['token'], 'SSL');
+				$data['simple_blog_category_setting'] = $this->url->link('module/simple_blog_category', 'token=' . $this->session->data['token'], 'SSL');
+				$data['simple_blog_view_report'] = $this->url->link('simple_blog/report', 'token=' . $this->session->data['token'], 'SSL');
+			]]></add>
+		</operation>
+		
+	</file>
+	
+	<file name="admin/view/template/common/menu.tpl">
+		<operation>
+			<search position="before"><![CDATA[<li id="reports">]]></search>
+			<add><![CDATA[
+				
+			]]></add>
+		</operation>
+	</file>
+    
+    <!-- <file name="admin/controller/common/home.php">
+		<operation>
+			<search position="before"><![CDATA[$this->template = 'common/home.tpl';]]></search>
+			<add><![CDATA[
+				if (isset($this->session->data['success'])) {
+    				$data['success'] = $this->session->data['success'];
+    	
+    				unset($this->session->data['success']);
+    			} else {
+    				$data['success'] = '';
+    			}
+			]]></add>
+		</operation>
+	</file>
+    
+    <file name="admin/view/template/common/home.tpl">
+		<operation>
+			<search position="before"><![CDATA[<div class="box">]]></search>
+			<add><![CDATA[
+				<?php if ($success) { ?>
+  			       <div class="success"><?php echo $success; ?></div>
+  		        <?php } ?>
+			]]></add>
+		</operation>
+	</file> -->
+
+</modification>
